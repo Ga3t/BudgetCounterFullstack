@@ -1,0 +1,15 @@
+server:
+  port: 49360
+spring:
+  application:
+    name: api-gateway-service
+    cloud:
+      gateway:
+        discovery:
+          locator:
+            enabled: true
+    logging:
+      level:
+        org.springframework.cloud.gateway: TRACE
+        reactor.netty.http.client: DEBUG
+        org.springframework.web: DEBUG

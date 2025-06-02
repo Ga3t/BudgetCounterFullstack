@@ -1,0 +1,35 @@
+server:
+  port: 0
+spring:
+  application:
+    name: ledger-service
+  datasource:
+    url: jdbc:postgresql://localhost:5432/ledger_db
+    username: postgres
+    password: Bgl862304*
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+  mvc:
+    throw-exception-if-no-handler-found: true
+  web:
+    resources:
+      add-mappings: false
+  logging:
+    level:
+      org.hibernate: DEBUG
+      org.hibernate.SQL: DEBUG
+      org.hibernate.type.descriptor.sql.BasicBinder: TRACE
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    prefer-ip-address: true

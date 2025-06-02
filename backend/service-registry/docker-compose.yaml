@@ -1,0 +1,8 @@
+version: "3.9"
+services:
+  backend:
+    build: .
+    container_name: service_registry
+    ports:
+      - "0:8761"
+    restart: always
