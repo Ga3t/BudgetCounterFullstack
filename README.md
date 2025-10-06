@@ -92,8 +92,3 @@ This modular design ensures scalability, maintainability, and reliability when p
 - **Redis:** Caching of cryptocurrency data  
 - **Kubernetes:** Container orchestration and scaling  
 - **Nginx (optional):** Load balancing  
-
----
-
-## License
-This project is distributed under the MIT License. See [LICENSE](LICENSE) for more information.
